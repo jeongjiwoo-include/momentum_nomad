@@ -1,5 +1,5 @@
-const clockContainer = document.querySelector(".js-clock");
-const clockTitle = clockContainer.querySelector("h1");
+const clockContainer = document.querySelector(".js-clock"); //selector로 js-clock class 
+const clockTitle = clockContainer.querySelector("h1"); //selector로 clockcontainer 자식들 받아옴
 
 function getTime(){
     const date = new Date();
@@ -9,7 +9,7 @@ function getTime(){
     clockTitle.innerText =
     `${hours < 10 ? `0${hours}` : hours }:
     ${minutes < 10 ? `0${minutes}`: minutes}:
-    ${seconds < 10 ? `0${seconds}` : seconds}`;
+    ${seconds < 10 ? `0${seconds}` : seconds}`; //ternary operator : (condition) ? (then) : (else)
 }
 
 function init(){
