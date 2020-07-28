@@ -8,12 +8,10 @@ let toDos = [];
 
 function deleteToDo(event){
     const btn = event.target;
-    console.log('btn:', btn);
     const li = btn.parentNode;
-    console.log('li:', li);
     toDoList.removeChild(li);
     const cleanToDos = toDos.filter(function(toDo){         //filter -> 함수에 대해 array를 조건에 따라 하나씩 비교하여 참인 것만 모아서 array 리턴
-        console.log('toDo.id:', toDo.id,'li.id', li.id);
+        //console.log('toDo.id:', toDo.id,'li.id', li.id);
         return toDo.id !== parseInt(li.id);
     });
     toDos = cleanToDos;
