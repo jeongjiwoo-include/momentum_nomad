@@ -1,8 +1,7 @@
-body{
-    background: #ecf0f1;
+body {
+    background-color: #ecf0f1;
   }
-  
-h1 {
+body {
     color : #34495e;
 }
 
@@ -12,4 +11,13 @@ h1 {
 
 .clicked {
     color : #7f8c8d;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display : block;
 }
