@@ -1,23 +1,44 @@
 body {
-    background-color: #ecf0f1;
+    background-color: #34495e;
+    color : white;
   }
-body {
-    color : #34495e;
-}
 
-.btn {
-    cursor : pointer;
-}
-
-.clicked {
-    color : #7f8c8d;
+.clock{
+    color : #40407a;
+    font-size: 80px;
+    text-align: center;
 }
 
 .form,
 .greetings{
+    text-align: center;
     display: none;
+}
+
+.toDoForm{
+    text-align: center;
 }
 
 .showing{
     display : block;
 }
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation : fadeIn .5s linear;
+}
+
